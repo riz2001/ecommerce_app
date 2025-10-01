@@ -46,8 +46,10 @@ class HomePage extends StatelessWidget {
                   ),
                   title: Text(product.title),
                   subtitle: Text("\$${product.price}"),
-                  onTap: () {
-                    Get.toNamed('/product', arguments: product.id);
+                    onTap: () {
+                      Get.toNamed('/product', arguments: product.id);
+                      // pass product object
+
                   },
                 );
               },
